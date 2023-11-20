@@ -20,6 +20,17 @@
  <h1 class="header">檔案上傳練習</h1>
  <!----建立你的表單及設定編碼----->
 
+<form action="./api/upload.php" method="post">
+
+<input type="file" name="" id="" enctype="mulitpart/form-data">
+<!-- encode_type -->
+<input type="submit" value="上傳">
+
+</form>
+
+
+
+
 
 
 
