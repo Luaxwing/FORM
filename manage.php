@@ -50,7 +50,7 @@ $files=all('files');
     ?>
         <tr>
             <td><?=$file['id'];?></td>
-            <td><?=$file['name'];?></td>
+            <td><img class='thumbs' src="imgs/<?=$file['name'];?>"></td>
             <td><?=$file['type'];?></td>
             <td><?=$file['size'];?></td>
             <td><?=$file['desc'];?></td>
