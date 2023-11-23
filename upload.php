@@ -20,11 +20,12 @@
  <h1 class="header">檔案上傳練習</h1>
  <!----建立你的表單及設定編碼----->
 
-<form action="./api/upload.php" method="post">
+<form action="./api/upload.php" method="post" enctype="multipart/form-data">
 
-<input type="file" name="" id="" enctype="mulitpart/form-data">
+<input type="file" name="img" id="" >
+<input type="text" name="desc" id="" value="" placeholder="請輸入檔案描述">
 <!-- encode_type -->
-<input type="submit" value="上傳">
+<input type="submit" name="" value="上傳">
 
 </form>
 
@@ -36,6 +37,18 @@
 
 
 <!----建立一個連結來查看上傳後的圖檔---->  
+<?php
+
+if(isset($_GET["img"])){
+    echo"<img src='./imgs/{$_GET['img']}'>";
+}
+
+
+?>
+
+
+
+
 
 
 </body>
